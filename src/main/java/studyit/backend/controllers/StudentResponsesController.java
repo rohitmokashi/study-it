@@ -29,9 +29,9 @@ public class StudentResponsesController {
         List<StudentResponses> responses = studentResponsesService.getAllResponses();
         return new ResponseEntity<>(responses, HttpStatus.OK);
     }
-    @PostMapping()
-    public ResponseEntity<StudentResponses> createResponse(@RequestBody StudentResponses response) {
-        StudentResponses createdResponse = studentResponsesService.createResponse(response);
-        return new ResponseEntity<>(createdResponse, HttpStatus.CREATED);
-    }
+    // @PostMapping()
+    // public ResponseEntity<StudentResponses> createResponse(@RequestBody StudentResponses response) {
+    //     StudentResponses createdResponse = studentResponsesService.createResponse(response);
+    //     return new ResponseEntity<>(createdResponse, HttpStatus.CREATED);
+    // }
 }

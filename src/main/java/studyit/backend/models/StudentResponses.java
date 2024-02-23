@@ -14,8 +14,6 @@ public class StudentResponses {
 
     private int marks;
 
-    
-
     public Student getStudent() {
         return student;
     }
